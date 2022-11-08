@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.25.5"
+  },
+  "name": "trabsgbd",
+  "version": "1.0.0",
+  "description": "populando tabelas no banco de dados",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael Lemos",
+  "license": "ISC"
+}
