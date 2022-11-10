@@ -5,20 +5,24 @@ const connection = require('./database');
 
 // criando tabela no banco de dados
 // allowNull significa not NULL
-const Departamentos = connection.define('Departamento', {
-    Dnum: {
+const Funcionarios = connection.define('Funcionario', {
+    Cpf: {
         type: Sequelize.INTEGER,
         allowNull: false
     },
-    Cpf_ger: {
+    Dnr: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    Salario: {
         type: Sequelize.INTEGER,
         allowNull: false
     }
 })
 
-// Departamento.sync({
+// Funcionarios.sync({
 //     force: true
 // });
 
 
-module.exports = Departamentos;
+module.exports = Funcionarios;

@@ -5,12 +5,16 @@ const connection = require('./database');
 
 // criando tabela no banco de dados
 // allowNull significa not NULL
-const Departamentos = connection.define('Departamento', {
-    Dnum: {
+const Projeto = connection.define('Projeto', {
+    projNumero: {
         type: Sequelize.INTEGER,
         allowNull: false
     },
-    Cpf_ger: {
+    projLocal: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    Dnum: {
         type: Sequelize.INTEGER,
         allowNull: false
     }
@@ -21,4 +25,4 @@ const Departamentos = connection.define('Departamento', {
 // });
 
 
-module.exports = Departamentos;
+module.exports = Projeto;
